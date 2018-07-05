@@ -6,6 +6,6 @@ class Song
   end 
   
   def self.new_by_filename(file)
-    artist, name, genre = file.chomp(".mp3").split(/\s-\s/)
+    artist_name, song_name, genre = file.chomp(".mp3").split(/\s-\s/)
     
     
