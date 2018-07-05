@@ -9,6 +9,7 @@ class Song
     artist_name, song_name, genre = file.chomp(".mp3").split(/\s-\s/)
     song = self.new(song_name)
     song.artist = Artist.find_or_create_by_name(artist_name)
+    song
   end 
 end
     
